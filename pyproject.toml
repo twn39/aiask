@@ -1,0 +1,37 @@
+[project]
+name = "aiask"
+version = "0.1.0"
+description = "AIAsk is an intelligent AI assistant that leverages AI to enhance your daily life."
+authors = [
+    { name = "curry tang", email = "twn39@163.com" }
+]
+dependencies = [
+    "typer[all]>=0.13.0",
+    "openai>=1.54.4",
+    "llama-index>=0.11.23",
+    "llama-index-llms-openai>=0.2.16",
+    "llama-index-llms-openrouter>=0.2.1",
+    "langchain>=0.3.7",
+    "langchain-openai>=0.2.8",
+    "pydantic>=2.9.2",
+    "rich>=13.9.4",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+aiask = "aiask.main:app"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aiask"]

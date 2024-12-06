@@ -6,3 +6,10 @@ screen:
 
 
 ![](./screen.png)
+
+
+## Installation
+
+```bash
+pip install aiask
+```

@@ -1,12 +1,12 @@
 [project]
 name = "aiask"
-version = "0.1.1"
+version = "0.1.2"
 description = "AIAsk is an intelligent AI assistant that leverages AI to enhance your daily life."
 authors = [
     { name = "curry tang", email = "twn39@163.com" }
 ]
 dependencies = [
-    "typer[all]>=0.13.0",
+    "typer>=0.13.0",
     "langchain>=0.3.7",
     "langchain-openai>=0.2.8",
     "pydantic>=2.9.2",
